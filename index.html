@@ -82,13 +82,79 @@
             background: rgba(0, 0, 0, 0.5);
             margin-top: 50px;
         }
+
+        /* Sosyal Medya Butonları */
+        .social-media {
+            text-align: center;
+            margin: 30px 0;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .social-btn {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            color: white;
+            font-size: 16px;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .instagram { background: linear-gradient(45deg, #E4405F, #C13584); }
+        .youtube { background: linear-gradient(45deg, #FF0000, #CC0000); }
+        .github { background: linear-gradient(45deg, #333, #555); }
+        .discord { background: linear-gradient(45deg, #5865F2, #4752C4); }
+
+        /* Hoca Bölümü */
+        .teacher-section {
+            margin: 30px 0;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .teacher-info {
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .teacher-info p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .school-badge {
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 15px 0;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
     <!-- Header -->
     <div class="header">
         <h1>🎯 Merhaba!</h1>
-        <p>Muhammed'in Web Sitesine Hoş Geldin</p>
+        <p>Muhammed Umutlu'nun Web Sitesine Hoş Geldin</p>
         <a href="#content" class="btn">Keşfet</a>
     </div>
 
@@ -100,22 +166,55 @@
         <div class="cards">
             <div class="card">
                 <h3>🎮 Hobilerim</h3>
-                <p>Oyun oynamak
+                <p>Oyun oynamak<br>Kod yazmak<br>Müzik dinlemek</p>
             </div>
             <div class="card">
                 <h3>📚 Dersler</h3>
-                <p>Bilişim Teknolojileri<br>Beden<br>Edebiyat</p>
+                <p>Bilişim Teknolojileri<br>Beden Eğitimi<br>Edebiyat</p>
             </div>
             <div class="card">
                 <h3>🎯 Hedefler</h3>
                 <p>Web geliştirici olmak<br>İyi bir programcı olmak</p>
             </div>
         </div>
+
+        <!-- Sosyal Medya Butonları -->
+        <div class="social-media">
+            <h3>📱 Beni Takip Et</h3>
+            <div class="social-buttons">
+                <button class="social-btn instagram" onclick="window.open('https://instagram.com/muhammed', '_blank')">
+                    📸 Instagram
+                </button>
+                <button class="social-btn youtube" onclick="window.open('https://youtube.com/@muhammed', '_blank')">
+                    🎥 YouTube
+                </button>
+                <button class="social-btn github" onclick="window.open('https://github.com/weixtvip', '_blank')">
+                    💻 GitHub
+                </button>
+                <button class="social-btn discord" onclick="alert('Discord: Muhammed#1234')">
+                    🎮 Discord
+                </button>
+            </div>
+        </div>
+
+        <!-- Hoca Bölümü -->
+        <div class="teacher-section">
+            <h3>👨‍🏫 Bilişim Teknolojileri Öğretmenim</h3>
+            <div class="teacher-info">
+                <div class="school-badge">
+                    🏫 Süleyman Nazif Anadolu Lisesi
+                </div>
+                <p><strong>Adı Soyadı:</strong> Veysel Demircioğlu</p>
+                <p><strong>Ders:</strong> Bilişim Teknolojileri ve Yazılım</p>
+                <p><strong>Teşekkür:</strong> HTML ve web geliştirme öğrettiği için Veysel Hoca'ma teşekkür ederim! 🎯</p>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
     <div class="footer">
-        <p>© 2025 Muhammed - Tüm hakları saklıdır! 😎</p>
+        <p>© 2025 Muhammed Umutlu - Tüm hakları saklıdır! 😎</p>
+        <p>Süleyman Nazif Anadolu Lisesi - 9. Sınıf</p>
     </div>
 </body>
-</html>
+                       </html>
