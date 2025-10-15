@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed'in Havalı Sitesi</title>
+    <style>
+        /* Genel stil */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* İçerik bölümü */
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Kartlar */
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Buton */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff5252;
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>🎯 N'aber Kankam!</h1>
+        <p>Muhammed'in Havalı Web Sitesine Hoş Geldin</p>
+        <a href="#content" class="btn">Keşfet</a>
+    </div>
+
+    <!-- İçerik -->
+    <div class="content" id="content">
+        <h2>🔥 Ben Kimim?</h2>
+        <p>9. sınıf öğrencisiyim, bilişim dersinde HTML öğreniyorum. Bu siteyi kendim kodladım agam!</p>
+        
+        <div class="cards">
+            <div class="card">
+                <h3>🎮 Hobilerim</h3>
+                <p>Oyun oynamak<br>Kod yazmak<br>Müzik dinlemek</p>
+            </div>
+            <div class="card">
+                <h3>📚 Dersler</h3>
+                <p>Bilişim Teknolojileri<br>Matematik<br>İngilizce</p>
+            </div>
+            <div class="card">
+                <h3>🎯 Hedefler</h3>
+                <p>Web geliştirici olmak<br>İyi bir programcı olmak</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 Muhammed - Tüm hakları saklıdır agam! 😎</p>
+    </div>
+</body>
+</html>
